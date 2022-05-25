@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background-color: #d8d9c7;
+}
+
+nav {
+  display: flex;
+  padding-bottom: 44px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  overflow: hidden;
+}
+
+.nav-list {
+  overflow: hidden;
+  display: flex;
+  max-width: 720px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 5px solid #1c1c1c;
+  border-right: 5px solid #1c1c1c;
+  border-bottom-right-radius: 5px;
+}
+
+.nav-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-link {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 20pt;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #1c1c1c;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color: #1c1c1c;
+  background-color: #d8d9c7;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav-link:focus {
+  text-decoration: none;
+  color: #1c1c1c;
+  background-color: #a1baff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.navbar + content {
+  padding-top: 100px;
+}
+
+content {
+  display: block;
+  max-width: 720px;
+}
