@@ -1,15 +1,17 @@
-var navbar = document.getElementById("navbar");
-
-document.getElementById("navbar").addEventListener("scroll", stickyBar);
-
 window.onscroll = function () {
-  stickyBar();
+  scrollFunction();
 };
 
-function stickyBar() {
-  if (window.pageYOffset >= navbar.offsetTop) {
-    navbar.classList.add("sticky");
+// Code adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+function scrollFunction() {
+  if (window.pageYOffset > 100) {
+    document.getElementById("scrollButton").style.display = "block";
   } else {
-    navbar.classList.remove("sticky");
+    document.getElementById("scrollButton").style.display = "none";
   }
+}
+
+// Code adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+function scrollToTop() {
+  document.documentElement.scrollTop = 0;
 }
