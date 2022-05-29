@@ -1,10 +1,14 @@
 body {
   margin: 0;
+  text-align: center;
+  align-items: center;
   background-color: #d8d9c7;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 nav {
   display: flex;
+  flex-shrink: 5;
   padding-bottom: 44px;
   margin-bottom: 20px;
   position: fixed;
@@ -21,6 +25,7 @@ h1 {
 .nav-list {
   overflow: hidden;
   display: flex;
+  flex-shrink: 5;
   max-height: 87px;
   flex-shrink: 2;
   list-style-type: none;
@@ -33,6 +38,7 @@ h1 {
 
 .nav-item {
   display: flex;
+  flex-shrink: 5;
   justify-content: center;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -92,6 +98,79 @@ h2 {
 
 p {
   margin-left: inherit;
+  margin-right: 5px;
+}
+
+.form_container {
+  display: flex;
+  flex-shrink: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding: 0;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  width: 390px;
+}
+
+.contact_form {
+  width: 100%;
+}
+
+.form_element {
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.form_element > label {
+  padding-right: 10px;
+}
+
+.form_element > span {
+  display: block;
+  float: right;
+  font-family: "Courier New", Courier, monospace;
+  word-wrap: break-word;
+  height: 300px;
+  box-sizing: content-box;
+  width: 298px;
+  padding: none;
+  margin-right: 6px;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #1c1c1c;
+  border-radius: 2px;
+}
+
+.form-input {
+  width: 298px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12pt;
+  border: 1px solid #1c1c1c;
+  border-radius: 2px;
+  float: right;
+  margin-right: 6px;
+}
+
+#Submit {
+  display: block;
+  width: 300px;
+  margin-left: 84px;
+  border-color: transparent;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+#Submit:hover {
+  background-color: white;
+  color: #1c1c1c;
+  border: 2px solid;
+  border-color: #1c1c1c;
 }
 
 #scrollButton {
