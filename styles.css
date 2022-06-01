@@ -1,25 +1,49 @@
 body {
-  margin: 0;
-  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: center;
+  align-content: space-between;
+  text-align: center;
+  margin: 0;
+  border: solid 10px #1c1c1c;
   background-color: #d8d9c7;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-nav {
+#navbar {
   display: flex;
-  flex-shrink: 5;
-  padding-bottom: 44px;
-  margin-bottom: 20px;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
+  max-width: 700px;
 }
 
-h1 {
+#greeting {
+  display: flex;
+  flex-flow: column;
   margin-top: 100px;
+  align-items: center;
+}
+
+#greeting_small_1 {
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: -15px;
+}
+
+#greeting_big {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4rem;
   text-align: center;
-  overflow: hidden;
+}
+
+#greeting_small_2 {
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 0;
 }
 
 .nav-list {
@@ -86,6 +110,22 @@ h1 {
   display: hidden;
   position: relative;
   top: -100px;
+}
+
+#about_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#pic_of_me {
+}
+
+#about_section + p {
+  flex-shrink: 3;
 }
 
 content {
