@@ -167,6 +167,9 @@ body {
 }
 
 #pic_of_me {
+  border: 1px;
+  border-radius: 15px;
+  box-shadow: -5px 5px 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 #about_section + p {
@@ -179,9 +182,11 @@ content {
 
 h2 {
   margin-left: inherit;
+  font-size: 24pt;
 }
 
 p {
+  text-align: left;
   margin-left: inherit;
   margin-right: 5px;
 }
