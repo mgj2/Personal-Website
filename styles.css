@@ -110,6 +110,21 @@ body {
   }
 }
 
+@media all and (min-width: 481px) {
+  .menu {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    display: flex;
+  }
+
+  #navbar {
+    flex-direction: row;
+  }
+}
+
 #greeting {
   display: flex;
   flex-flow: column;
