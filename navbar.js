@@ -1,17 +1,10 @@
-window.onscroll = function () {
-  scrollFunction();
-};
+const menu_button = document.getElementById(`menu`);
+const nav_list = document.getElementById(`nav_list`);
 
-// Code adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-function scrollFunction() {
-  if (window.pageYOffset > 100) {
-    document.getElementById("scrollButton").style.display = "block";
+menu_button.addEventListener(`click`, () => {
+  if (nav_list.style.display === `none`) {
+    nav_list.style.display = `flex`;
   } else {
-    document.getElementById("scrollButton").style.display = "none";
+    nav_list.style.display = `none`;
   }
-}
-
-// Code adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-function scrollToTop() {
-  document.documentElement.scrollTop = 0;
-}
+});
