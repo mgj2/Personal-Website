@@ -6,7 +6,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 59px;
-  padding: -1;
   border: 0px solid #1c1c1c;
   border-radius: 4px;
   width: 374px;
@@ -39,11 +38,11 @@
   height: 249px;
   font-family: "Courier New", Courier, monospace;
   word-wrap: break-word;
-  padding-left: 1px;
-  padding-right: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
   padding-top: 0px;
   padding-bottom: 0px;
-  margin-right: -1px;
+  margin-right: 0px;
   margin-left: auto;
   text-align: left;
   background-color: white;
@@ -51,7 +50,7 @@
   border-radius: 1px;
 }
 
-.form-input {
+.form_input {
   width: 249px;
   font-family: "Courier New", Courier, monospace;
   font-size: 11pt;
