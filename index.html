@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./contact_form.css" />
     <link rel="stylesheet" href="./course_list.css" />
+    <link rel="stylesheet" href="./projects.css" />
     <script defer src="navbar.js"></script>
     <title>Document</title>
   </head>
@@ -18,7 +19,7 @@
         <div class="menu_line"></div>
         <div class="menu_line"></div>
       </div>
-      <ul class="nav_list" id="nav_list">
+      <ul class="nav_list" id="nav_list" display="flex">
         <li class="nav_item">
           <a class="nav_link" href="#about_anchor" id="about_link">about</a>
         </li>
@@ -83,7 +84,29 @@
       </section>
       <div class="anchor" id="projects_anchor"></div>
       <h2>projects</h2>
-      <section id="projects_section"></section>
+      <section id="projects_section">
+        <a class="card" id="project_1" href="https://github.com/mgj2/IRC"
+          ><img src="./images/github_logo.png" id="github_logo" />Internet Relay
+          Chat</a
+        >
+        <a
+          class="card"
+          id="project_2"
+          href="https://github.com/stevensonmat2/ai_group_project"
+        >
+          <img src="./images/github_logo.png" id="github_logo" />
+          Chess AI Bot</a
+        >
+
+        <a
+          class="card"
+          id="project_3"
+          href="https://gitlab.cecs.pdx.edu/drg3/timeflo-team-managed"
+        >
+          <img src="./images/Gitlab_Logo.png" id="gitlab_logo" />
+          TimeFlo App
+        </a>
+      </section>
       <div class="anchor" id="contact_anchor"></div>
       <h2>contact</h2>
       <section id="contact_section">

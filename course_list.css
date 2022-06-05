@@ -19,7 +19,7 @@
   grid-column-start: 1;
 }
 
-#course_2 course_4 {
+#course_2 #course_4 {
   grid-column-start: 2;
 }
 
@@ -29,5 +29,9 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     padding-left: 0;
+  }
+
+  #course_list > * {
+    grid-column-start: 1;
   }
 }

@@ -1,0 +1,79 @@
+#projects_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  border-width: 1px;
+  border-left-width: 8px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #1c1c1c;
+  background-color: #515149;
+  box-shadow: -5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16pt;
+  text-decoration: none;
+  color: white;
+}
+
+#project_1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+
+#project_2 {
+  grid-column-start: 3;
+  grid-column-end: end;
+  grid-row-start: 1;
+}
+
+#project_3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+}
+
+#gitlab_logo {
+  display: block;
+  height: 60px;
+  width: auto;
+  margin-left: 10px;
+}
+
+#github_logo {
+  display: block;
+  height: 60px;
+  width: auto;
+  margin-left: 32px;
+  margin-right: 24px;
+}
+
+@media all and (max-width: 500px) {
+  #projects_section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #project_1 {
+    grid-row-start: 1;
+  }
+
+  #project_2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  #project_3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+}
