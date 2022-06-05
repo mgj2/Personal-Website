@@ -1,0 +1,100 @@
+.form_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 59px;
+  padding: -1;
+  border: 0px solid #1c1c1c;
+  border-radius: 4px;
+  width: 374px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 99%;
+}
+
+.form_element {
+  display: flex;
+  text-align: right;
+  height: auto;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.form_element > label {
+  width: 59px;
+  padding-right: 9px;
+}
+
+.form_element > span {
+  width: 249px;
+  height: 249px;
+  font-family: "Courier New", Courier, monospace;
+  word-wrap: break-word;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-right: -1px;
+  margin-left: auto;
+  text-align: left;
+  background-color: white;
+  border: 0px solid #1c1c1c;
+  border-radius: 1px;
+}
+
+.form-input {
+  width: 249px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 11pt;
+  margin-left: auto;
+  margin-right: -1;
+  border: 0px solid #1c1c1c;
+  border-radius: 1px;
+}
+
+#Submit {
+  width: 255px;
+  margin-left: 108px;
+  margin-right: auto;
+  margin-bottom: 4px;
+  border-color: transparent;
+  font-size: medium;
+  background-color: #0c1c1c;
+  color: white;
+}
+
+#Submit:hover {
+  background-color: white;
+  color: #0c1c1c;
+  border: 1px solid;
+  border-color: #0c1c1c;
+}
+
+#scrollButton {
+  display: none;
+  position: fixed;
+  bottom: 19px;
+  right: 29px;
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
+  font-size: medium;
+  background-color: #0c1c1c;
+  color: white;
+}
+
+#scrollButton:hover {
+  background-color: white;
+  color: #0c1c1c;
+  border: solid;
+  border-color: #0c1c1c;
+}

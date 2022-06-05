@@ -21,6 +21,7 @@ body {
   margin-left: 10px;
   margin-right: auto;
   margin-bottom: -15px;
+  font-size: 1rem;
 }
 
 #greeting_big {
@@ -31,14 +32,42 @@ body {
 }
 
 #greeting_small_2 {
-  margin-right: 0;
+  margin-right: 10px;
   margin-left: auto;
   margin-top: 0;
+}
+
+@media all and (max-width: 500px) {
+  #greeting_big {
+    font-size: 3rem;
+    margin-top: 5px;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  #greeting_big {
+    font-size: 5rem;
+  }
+}
+
+@media all and (min-width: 1900px) {
+  #greeting_big {
+    font-size: 6rem;
+  }
+
+  #greeting > p {
+    font-size: 1.5rem;
+  }
 }
 
 content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .anchor {
@@ -50,7 +79,7 @@ content {
 #about_section {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   padding: 20px;
   margin-left: 25px;
@@ -58,10 +87,17 @@ content {
 }
 
 #about_section > p {
+  font-size: 1.25rem;
   text-align: left;
   margin-left: inherit;
   margin-right: 5px;
-  max-width: 370px;
+  max-width: 700px;
+}
+
+@media all and (max-width: 540px) {
+  #about_section {
+    flex-wrap: wrap;
+  }
 }
 
 #pic_of_me {
