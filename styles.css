@@ -71,7 +71,7 @@ content {
 }
 
 .anchor {
-  display: hidden;
+  display: none;
   position: relative;
   top: -100px;
 }
